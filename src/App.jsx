@@ -4,8 +4,6 @@ import Sidebar from "./components/Sidebar";
 import {
   IconEdit,
   IconFilter,
-  IconHome,
-  IconLighter,
   IconSearch,
   IconSparkles,
   IconUser,
@@ -13,51 +11,9 @@ import {
 } from "@tabler/icons-react/dist/esm/tabler-icons-react";
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from "@headlessui/react";
 
-// const Modal = ({ isOpen, onClose, children }) => {
-//   if (!isOpen) return null;
-
-//   return (
-//     <div className="fixed inset-0 flex
-//                       items-center justify-center
-//                       bg-black bg-opacity-50">
-//       <div className="bg-white rounded-lg
-//                           shadow-lg p-6 max-w-md
-//                           w-full relative">
-//         <button
-//           className="absolute top-2 right-2
-//                              text-gray-500 hover:text-gray-700"
-//           onClick={onClose}
-//         >
-//           &#x2715; {/* Close button */}
-//         </button>
-//         {children}
-//       </div>
-//     </div>
-//   );
-// };
-
-// const AlertModal = ({ isOpen, onClose }) => {
-//   return (
-//     <Modal isOpen={isOpen} onClose={onClose}>
-//       <h2 className="text-lg font-bold">Alert</h2>
-//       <p className="text-gray-700">
-//         This is an important message.
-//       </p>
-//       <button
-//         className="mt-4 px-4 py-2
-//                          bg-blue-500 text-white
-//                          rounded-lg"
-//         onClick={onClose}
-//       >
-//         OK
-//       </button>
-//     </Modal>
-//   );
-// };
 
 function App() {
   const [activeTab, setActiveTab] = useState("Employees Skills & Experience");
-  const [isModalOpen, setModalOpen] = useState(false);
   const [open, setOpen] = useState(false);
 
   return (
