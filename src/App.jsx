@@ -58,7 +58,7 @@ import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from "@headlessui/re
 function App() {
   const [activeTab, setActiveTab] = useState("Employees Skills & Experience");
   const [isModalOpen, setModalOpen] = useState(false);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className='flex'>
