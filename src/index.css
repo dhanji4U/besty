@@ -72,3 +72,17 @@ button:focus-visible {
 button{
   cursor: pointer;
 }
+
+.custom-gradient-row {
+  position: relative;
+  background: linear-gradient(to right, #0062ff, #0580b9); /* Gradient background for the row */
+  padding: 2px; /* Thickness of the "border" */
+  border-radius: 8px; /* Match the rounded-lg */
+}
+
+/* Inner content with white background to simulate the border effect */
+.custom-gradient-row td,
+.custom-gradient-row th {
+  background: white; /* White background for the content */
+  border-radius: 6px; /* Slightly smaller radius to fit inside the gradient */
+}

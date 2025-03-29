@@ -1,16 +1,8 @@
 import { useState } from "react";
 
 import Sidebar from "./components/Sidebar";
-import {
-  IconEdit,
-  IconFilter,
-  IconSearch,
-  IconSparkles,
-  IconUser,
-  IconX
-} from "@tabler/icons-react/dist/esm/tabler-icons-react";
+import { IconEdit, IconFilter, IconSearch, IconSparkles, IconUser, IconX } from "@tabler/icons-react/dist/esm/tabler-icons-react";
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from "@headlessui/react";
-
 
 function App() {
   const [activeTab, setActiveTab] = useState("Employees Skills & Experience");
@@ -60,7 +52,7 @@ function App() {
           </div>
 
           <div className='relative overflow-x-auto'>
-            <table className='border-separate border-spacing-y-3 rounded rtl:text-right text-left text-sm w-full'>
+            <table className='border-separate border-spacing-y-3 rounded rtl:text-right text-left text-sm w-full px-1'>
               <thead className='text-xs text-white bg-blue-500 '>
                 <tr>
                   <th scope='col' className='px-6 py-3 rounded-s-lg'>
@@ -75,7 +67,7 @@ function App() {
                 </tr>
               </thead>
               <tbody>
-                <tr className='bg-white'>
+                <tr className='bg-white outline-1 outline-blue-500 rounded-2xl'>
                   <td scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap align-top'>
                     <button className='cursor-pointer' onClick={() => setOpen(true)}>
                       Team A
@@ -154,7 +146,7 @@ function App() {
                         <IconUser />
                       </div>
                       <div className='flex flex-col pl-2'>
-                        <span className='font-semibold text-blue-700'>Dev User</span>
+                        <span className='font-semibold text-black-700'>Dev User</span>
                         <div className='flex'>
                           <span className='text-sm font-bold'>Admin</span>
                           <span className='pl-1 text-gray-500'>/External Supplier</span>
@@ -177,7 +169,7 @@ function App() {
                   </td>
                 </tr>
 
-                <tr className='bg-white'>
+                <tr className='bg-white outline-1 outline-blue-500 rounded-2xl'>
                   <th scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap'>
                     <button className='cursor-pointer' onClick={() => setOpen(true)}>
                       Team B
@@ -189,7 +181,7 @@ function App() {
                         <IconUser />
                       </div>
                       <div className='flex flex-col pl-2'>
-                        <span className='font-semibold text-blue-700'>Dev User</span>
+                        <span className='font-semibold text-black-700'>Dev User</span>
                         <div className='flex'>
                           <span className='text-sm font-bold'>Admin</span>
                           <span className='pl-1 text-gray-500'>/External Supplier</span>
@@ -206,7 +198,7 @@ function App() {
                     </div>
                   </td>
                 </tr>
-                <tr className='bg-white'>
+                <tr className='bg-white outline-1 outline-blue-500 rounded-2xl'>
                   <td scope='row' className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap align-top'>
                     <button className='cursor-pointer' onClick={() => setOpen(true)}>
                       Team C
@@ -218,7 +210,7 @@ function App() {
                         <IconUser />
                       </div>
                       <div className='flex flex-col pl-2'>
-                        <span className='font-semibold text-blue-700'>Dev User</span>
+                        <span className='font-semibold text-black-700'>Dev User</span>
                         <div className='flex'>
                           <span className='text-sm font-bold'>Admin</span>
                           <span className='pl-1 text-gray-500'>/External Supplier</span>
